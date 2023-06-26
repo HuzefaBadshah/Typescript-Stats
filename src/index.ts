@@ -1,6 +1,6 @@
 // to use any library inside node standard library with typescript install type definition:
 // npm install @types/node
-import { CsvFileReader } from "./CsvFileReader";
+import { MatchReader } from "./MatchReader";
 import { MatchResult } from "./MatchResult";
 
 // const matches = fs
@@ -10,7 +10,7 @@ import { MatchResult } from "./MatchResult";
 //   .split("\n")
 //   .map((item: string): string[] => item.split(","));
 
-const reader = new CsvFileReader("football.csv");
+const reader = new MatchReader("football.csv");
 reader.read();
 
 console.log("match is =============> ", reader.data);
