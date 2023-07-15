@@ -8,7 +8,7 @@ export class HtmlReport implements OutputTarget {
         const data = `
             <main>
                 <h1>Analysis Report</h1>
-                <p>${report}</p>
+                <p style="color: pink;">${report}</p>
             </main>
         `;
         fs.writeFileSync(`${__dirname}/${this.filename}`, data);

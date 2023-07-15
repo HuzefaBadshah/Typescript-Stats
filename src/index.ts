@@ -14,7 +14,8 @@ matchReader.load();
 const winTeamAnalyzer = new WinTeamAnalysis('Man United');
 const consoleReport = new ConsoleReports();
 const htmlReport = new HtmlReport('report.html');
-const summary = new Summary(winTeamAnalyzer, htmlReport);
+//const summary = new Summary(winTeamAnalyzer, htmlReport);
+const summary = Summary.winsAnalysisWithHtmlReport('Man United');
 
 summary.buildAndPrintReport(matchReader.matches);
 
