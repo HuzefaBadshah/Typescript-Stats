@@ -10,13 +10,6 @@ matchReader.load();
 
 console.log("match is =============> ", matchReader.matches);
 
-const count = matchReader.matches.reduce((acc: number, match): number => {
-  if (match[1] === "Man United" && match[5] === MatchResult.HomeWin) {
-    return ++acc;
-  } else if (match[2] === "Man United" && match[5] === MatchResult.AwayWin) {
-    return ++acc;
-  }
-  return acc;
-}, 0);
+
 
 console.log("count ------------>", count);
